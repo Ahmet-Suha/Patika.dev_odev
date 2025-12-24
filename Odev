@@ -1,0 +1,28 @@
+Proje 1: Insertion Sort Aşamaları
+​Başlangıç Dizisi: [22, 27, 16, 2, 18, 6]
+​Insertion Sort (Ekleme Sıralaması) algoritmasına göre adım adım ilerleyiş:
+​[22, 27, 16, 2, 18, 6] -> 22 zaten sıralı kabul edilir. 27, 22'den büyük olduğu için yerinde kalır.
+​[16, 22, 27, 2, 18, 6] -> 16 elemanı alınır; 27 ve 22'den küçük olduğu için en başa eklenir.
+​[2, 16, 22, 27, 18, 6] -> 2 elemanı alınır; mevcut sıralı kısmın en başına yerleştirilir.
+​[2, 16, 18, 22, 27, 6] -> 18 elemanı alınır; 27 ve 22'den küçük, 16'dan büyük olduğu için araya eklenir.
+​[2, 6, 16, 18, 22, 27] -> 6 elemanı alınır; 2'den büyük, 16'dan küçük olduğu için ikinci sıraya yerleştirilir.
+​Big-O Gösterimi
+​Insertion Sort algoritmasının karmaşıklık analizi şu şekildedir:
+​Average Case: O(n^2)
+​Worst Case: O(n^2)
+​Best Case: O(n)
+​18 Sayısının Time Complexity Kapsamı
+​Dizi sıralandıktan sonra şu hali alır: [2, 6, 16, 18, 22, 27]
+Sıralı dizide 18 sayısı, dizinin ne en başında ne de en sonundadır; yani orta kısımda yer almaktadır. Bu nedenle:
+​Cevap: Average Case (Aradığımız sayının ortada olması) kapsamına girer.
+​Selection Sort: İlk 4 Adım
+​Dizi: [7, 3, 5, 8, 2, 9, 4, 15, 6]
+​Selection Sort (Seçmeli Sıralama), her adımda dizinin geri kalanındaki en küçük elemanı bulup sıradaki elemanla yer değiştirir.
+1. Adım: Dizideki en küçük sayı 2'dir. En baştaki 7 ile yer değiştirir.
+[2,3,5,8,7,9,4,15,6]
+2. Adım: Kalanlar içindeki en küçük sayı 3'tür. Zaten doğru yerdedir, dizi değişmez.
+[2,3,5,8,7,9,4,15,6]
+3. Adım: Kalanlar içindeki en küçük sayı 4'tür. Mevcut sıradaki 5 ile yer değiştirir.
+[2,3,4,8,7,9,5,15,6]
+4. Adım: Kalanlar içindeki en küçük sayı 5'tir. Mevcut sıradaki 8 ile yer değiştirir.
+[2,3,4,5,7,9,8,15,6]
