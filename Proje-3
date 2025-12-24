@@ -1,0 +1,13 @@
+Proje 3: Binary Search Tree Projesi
+​Dizi: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+​Ağaç Oluşturma Aşamaları:
+​Root (Kök): 7'dir.
+​5: 5 < 7 olduğu için 7'nin soluna eklenir.
+​1: 1 < 7 ve 1 < 5 olduğu için 5'in soluna eklenir.
+​8: 8 > 7 olduğu için 7'nin sağına eklenir.
+​3: 3 < 7 ve 3 < 5; ancak 3 > 1 olduğu için 1'in sağına eklenir.
+​6: 6 < 7; ancak 6 > 5 olduğu için 5'in sağına eklenir.
+​0: 0 < 7, 0 < 5 ve 0 < 1 olduğu için 1'in soluna eklenir.
+​9: 9 > 7 ve 9 > 8 olduğu için 8'in sağına eklenir.
+​4: 4 < 7, 4 < 5, 4 > 1 ve 4 > 3 olduğu için 3'ün sağına eklenir.
+​2: 2 < 7, 2 < 5, 2 > 1; ancak 2 < 3 olduğu için 3'ün soluna eklenir.
