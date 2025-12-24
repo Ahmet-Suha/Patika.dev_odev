@@ -1,0 +1,18 @@
+Proje 2: Merge Sort Aşamaları
+​Dizi: [16, 21, 11, 8, 12, 22]
+​Merge Sort algoritmasına göre dizinin sıralanma aşamaları aşağıdadır:
+​1. Bölme Aşaması (Divide)
+​Dizi, her bir alt parça tek bir eleman kalana kadar sürekli merkezden ikiye bölünür:
+​Aşama 1: [16, 21, 11] ve [8, 12, 22] olarak ikiye ayrılır.
+​Aşama 2: [16] | [21, 11] ve [8] | [12, 22] şeklinde bölünmeye devam eder.
+​Aşama 3: Tüm elemanlar bağımsız hale gelir: [16] | [21] | [11] | [8] | [12] | [22]
+​2. Birleştirme Aşaması (Merge)
+​Parçalar birbirleriyle karşılaştırılarak sıralı bir şekilde birleştirilir:
+​Aşama 4: [16] | [11, 21] ve [8] | [12, 22] (İkili gruplar sıralandı)
+​Aşama 5: [11, 16, 21] ve [8, 12, 22] (Üçlü gruplar sıralanarak birleşti)
+​Aşama 6: [8, 11, 12, 16, 21, 22] (Tüm elemanlar küçükten büyüye sıralandı)
+​Big-O Gösterimi
+​Merge Sort algoritması, diziyi her seferinde ikiye böldüğü için \log n seviyeli bir işlem yapar ve her seviyede n kadar karşılaştırma gerçekleştirir.
+​Best Case: O(n \log n)
+​Average Case: O(n \log n)
+​Worst Case: O(n \log n)
